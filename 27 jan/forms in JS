@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms in javascript</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="nm" placeholder="enter mame">
+        <input type="text" id="em" placeholder="enter email">
+        <input type="submit" id="btn">
+
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", getData);
+
+    function getData(e) {
+        e.preventDefault();
+        let name=document.querySelector("#nm").value;
+         let email=document.querySelector("#em").value;
+         console.log(name,email);
+
+    }
+    
+</script>
+<!--
+1.Wrap all type of input. in forms
+2. use input:type="submit" for cretting button
+3. always select events and add evennt
+4. apply submit event to form
+4. use e.preventDefault() method for stop form default behavior
+-->

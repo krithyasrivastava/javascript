@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get value from input tag</title>
+</head>
+<body>
+    <input type="name" id="nm">
+    <button onclick="clk()"> click</button> 
+</body>
+</html>
+<script>
+    function clk(){
+        const userdata = document.getElementById("nm").value
+        console.log(userdata)
+    }
+
+
+</script>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:500px ;
+            margin-top: 100px;
+            display: flex;
+            font-size: 30px;
+        }
+        
+        #calculator{
+          
+           border: 2px solid rgb(250, 247, 247);
+           box-shadow: 0 4px 10px;
+           border-radius: 10px;
+           height: 600px;
+           width: 500px;
+
+        }
+        #input{
+           border: 2px solid rgb(250, 247, 247);
+           box-shadow: 0 4px 10px;
+           border-radius: 10px;
+           margin-top: 30px;
+           margin-left: 30px;
+           height: 100px;
+           width: 400px;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+
+        }
+        #keys{
+            margin-top: 30px ;
+            
+        }
+        .numbers{
+           border: 2px solid rgb(250, 247, 247);
+           box-shadow: 0 4px 10px;
+           border-radius: 10px;
+           height:70px ; 
+           width: 70px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .black{
+            border: 2px solid rgb(5, 5, 5);
+           box-shadow: 0 4px 10px;
+           border-radius: 10px;
+           height:70px ; 
+           width: 70px;
+           background-color: black;
+           color: white;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+        }  
+        .red{
+           border: 2px solid rgb(250, 247, 247);
+           box-shadow: 0 4px 10px;
+           border-radius: 10px;
+           height:70px ; 
+           width: 70px;  
+           background-color: red;
+           color: white;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        #firstRow{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        #secondRow{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #thirdRow{
+           margin-top: 30px;
+            display: flex;
+            justify-content: space-around; 
+        }
+        #fourthRow{
+         margin-top: 30px;
+            display: flex;
+            justify-content: space-around;    
+        }
+
+    </style>
+    
+
+</head>
+<body>
+    <div id="calculator">
+        <div id="input"></div>
+
+        <div id="keyboard div">
+         <div id="keys">
+            <div id="firstRow">
+            <div class="numbers">1</div>
+            <div class="numbers">2</div>
+            <div class="numbers">3</div>
+            <div class="black">+</div>
+
+            </div>
+
+            <div id="secondRow">
+            <div class="numbers">4</div>
+            <div class="numbers">5</div>
+            <div class="numbers">6</div>
+            <div class="black">-</div>
+
+            </div>
+
+            <div id="thirdRow">
+            <div class="numbers">7</div>
+            <div class="numbers">8</div>
+            <div class="numbers">9</div>
+            <div class="black">*</div>
+            </div>
+
+            <div id="fourthRow">
+            <div class="red">C</div>
+            <div class="numbers">0</div>
+            <div class="black">=</div>
+            <div class="black">/</div>
+
+
+            </div>
+            
+            
+           
+            
+         </div>
+    </div>
+
+    </div>
+    
+</body>
+</html>
+<script>
+    let bag =""
+    const keys = document.querySelectorAll("#keys");
+    //console.log(keys)
+    for(let i=0; i<keys.length;i++){
+        //console.log(keys[i])
+        keys[i].addEventListener("click",myCal)
+
+    }
+    function myCal(e){
+        const targetNumber= e.target.innerText
+        console.log(targetNumber)
+
+        if(targetNumber=="C"){
+            bag =""
+            document.querySelector("#input").innerText = bag
+        }
+        else if(targetNumber=="="){
+            let ans= eval(bag)
+            document.querySelector("#input").innerText = ans
+        }
+        else{
+            bag+=targetNumber;
+            document.querySelector("#input").innerText= bag
+        }           
+
+
+        
+    }
+
+</script>

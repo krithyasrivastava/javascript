@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catching and innertext</title>
+</head>
+<body>
+    <div id="head">HEllo world</div>
+</body>
+</html>
+<script>
+    //step1 select and catch element
+    const heading= document.getElementById("head");
+    console.log(heading)
+
+    // step 2- read
+    const data = heading.innerText;
+    console.log(data);
+
+    // step 3- write
+    heading.innerText = "krmu"
+
+</script>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apply css using JS</title>
+</head>
+<body>
+    <button id="btn">click</button>
+</body>
+</html>
+<script>
+    const el =document.getElementById("btn");
+    console.log(el)
+    el.style.color="red"
+    el.style.backgroundColor="black"
+</script>

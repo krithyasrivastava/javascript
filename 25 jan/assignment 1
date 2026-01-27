@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT</title>
+</head>
+<body>
+   <input type="text" name="number" id="no.1" placeholder="enter 1st Number">
+   <input type="text" name="number" id="no.2" placeholder="enter 2nd Number" >
+   <HR>
+   <h3 id="dsum">SUM</h3>
+   <h3 id="dsubtract">SUBTRACT</h3>
+   <h3 id="dmultiply">MULTIPLY</h3>
+   <h3 id="ddivide">DIVIDE</h3>
+   <HR>
+    <button onclick="showsum()">sum</button>
+    <button onclick="showsubtract()">subtract</button>
+    <button onclick="showmultiply()">multipy</button>
+    <button onclick="showdivide()">divide</button>
+
+
+</body>
+</html>
+<script>
+   
+    function showsum(){
+    const firstdata = document.getElementById("no.1").value;
+    const seconddata = document.getElementById("no.2").value;
+    
+    const a = Number(firstdata)+Number(seconddata)
+    console.log(a);
+    document.getElementById("dsum").innerText= a
+    }
+    function showsubtract(){
+    const firstdata = document.getElementById("no.1").value;
+    const seconddata = document.getElementById("no.2").value;
+    
+    const b = Number(firstdata)-Number(seconddata)
+    console.log(b);
+    document.getElementById("dsubtract").innerText= b
+    }
+    function showmultiply(){
+    const firstdata = document.getElementById("no.1").value;
+    const seconddata = document.getElementById("no.2").value;
+    
+    const c = Number(firstdata)*Number(seconddata)
+    console.log(c);
+    document.getElementById("dmultiply").innerText= c
+    }
+    function showdivide(){
+   const firstdata = document.getElementById("no.1").value;
+    const seconddata = document.getElementById("no.2").value;
+    
+    const d = Number(firstdata)/Number(seconddata)
+    console.log(d);
+    document.getElementById("ddivide").innerText= d
+    }
+
+
+
+
+
+</script>

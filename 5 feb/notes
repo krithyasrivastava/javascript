@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+     <!-- asynchonous programming (advanced concepts)
+     language - medium to cummunicate
+     programming language-  set of instructions that we give to the computer 
+     generating various  -->
+
+     <!-- 2 type
+     high leevel language- java script , python
+     low level language - binary languagae  -->
+
+     <!-- compilation process - high level code is converted into low level -->
+
+     <!-- compiled language - convert high to low i 1go 
+     interpreted language - convert high to low in line  by line and excuted immediatly -->
+</body>
+</html>
+
+<script>
+    //intergrated progg language 
+    // store multiple datatype in same variables
+
+//     name = "love "
+//     console.log( name , typeof name); 
+
+//     name = 10 
+//     console.log( name , typeof name); 
+
+//     name = true 
+//     console.log( name , typeof name); 
+
+
+// hosting- mechanism in which you can use that variable before defining only by "var" and ans will be undefined then 
+// for regular  funtion complete memory mil jayega 
+
+
+// console.log( name)
+// console.log( age)
+
+// var name= "krithya"
+// let age = 19 
+
+// console.log( name)
+// console.log( age)
+
+
+
+// same function me bhi deeclare krne ke baad hi call kr skte hai 
+
+
+
+
+
+
+</script>

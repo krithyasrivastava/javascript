@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+     // hosting 
+
+    //  hello()
+    // function hello() {
+    //     console.log("name")
+    //     console.log(age);
+
+    //     let name = "krithya"
+    //     var age = 10 ;
+
+    //     console.log (name);
+    //     console.log(age);
+        
+    // }
+
+
+
+    // hello()
+    // function hello() {
+    //     console.log("name")
+    //     console.log(age); // hosting ke vjh se undefined aya
+
+
+    //     if (true){
+    //     let name = "krithya"
+    //     var age = 10 ;
+
+    //     console.log (name);
+    //     console.log(age);
+    //     } 
+
+    //      console.log(name)
+    //     console.log(age); // lexical scope ki vjh se 10 aa gya ..... 'var' lexical scope me pure function me kaam krta hai ......
+        // 'let' and 'const' bsss block me use hoTA HAI .
+
+
+    // }
+      
+    // excution context 
+    // one()
+    // console.log("start");
+    // function two (){
+    //     console.log("error");
+    //     let age = 10;
+    //     console.log(three())
+    //     console.log(age);
+    // }
+
+    // function three(){
+    //     return "hello developers"
+    // }
+    
+    // console.log("mid")
+    // console.log(two());
+
+    // console.log("end")
+
+    // function one (){
+    //     console.log(name);
+    //     var name ="shrey";
+    //     three()
+    //     cconsole.log(name);       
+    // }
+
+
+
+    // timer 
+
+    
+
+
+</script>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event propogation</title>
+    <style>
+        div{margin: 20px;
+        padding: 20px;
+        border: 2px solid red;
+    }
+
+
+    </style>
+</head>
+<body>
+   <div class="grand">Grand element
+    <div class="parent">parent element
+        <div class="child">child element</div>
+    </div>
+   </div> 
+</body>
+</html>
+<script>
+    let grandE1 = document.querySelector(".grand")
+     let grandE2 = document.querySelector(".parent")
+      let grandE3 = document.querySelector(".child")
+
+      // capture event propogation
+
+    
+ grandE1.addEventListener("click", function(){
+        console.log("grand element capture")
+      })
+
+
+      grandE2=  grandE1.addEventListener("click", function(){
+        console.log("grand element capture")
+      }, true)
+
+
+      grandE2.addEventListener("click", function(){
+        console.log("parent element capture")
+      }, true)
+
+    //    grandE3.addEventListener("click", function(){
+    //     console.log("child element capture")
+    //   }, true)
+
+//         console.log("parent element capture")
+//       })
+
+//        grandE3.addEventListener("click", function(){
+//         console.log("child element capture")
+//       })
+
+      
+
+
+
+
+
+
+// </script>

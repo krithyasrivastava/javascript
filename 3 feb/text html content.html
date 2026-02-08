@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text vs html vs content</title>
+</head>
+<body>
+    <h1>hello world <b style="display: none;">Welcome</b></h1>
+</body>
+</html>
+
+<script>
+
+    // 1. innertext
+    const textE1 = document.querySelector("h1").innerText;
+    console.log(textE1);
+
+    // innerHTML
+    const htmlE1 = document.querySelector("h1").innerHTML;
+    console.log(htmlE1);
+
+    //innercontent
+    const contentE1 = document.querySelector("h1").textContent;
+    console.log(contentE1);
+
+
+
+
+</script>
